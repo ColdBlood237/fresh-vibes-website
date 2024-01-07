@@ -3,7 +3,12 @@ import Vote from "./pages/Vote";
 import NoPage from "./pages/NoPage";
 
 function App() {
-  return <h1 className="text-9xl red font-bold underline">HOME</h1>;
+  return (
+    <div>
+      <button className="btn btn-primary">Primary</button>
+      <h1 className="text-9xl">HOME</h1>
+    </div>
+  );
 }
 
 export default App;
