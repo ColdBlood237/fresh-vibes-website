@@ -1,5 +1,12 @@
+import NavBar from "../components/NavBar";
+
 function Vote() {
-  return <h1>Vote</h1>;
+  return (
+    <>
+      <NavBar />
+      <h1>Vote</h1>
+    </>
+  );
 }
 
 export default Vote;

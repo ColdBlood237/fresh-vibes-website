@@ -1,5 +1,12 @@
+import NavBar from "../components/NavBar";
+
 function Upload() {
-  return <h1>UPLOAD</h1>;
+  return (
+    <>
+      <NavBar />
+      <h1>UPLOAD</h1>
+    </>
+  );
 }
 
 export default Upload;
