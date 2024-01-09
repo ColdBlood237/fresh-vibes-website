@@ -1,16 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App.jsx";
+import Home from "./pages/Home.jsx";
 import Upload from "./pages/Upload";
 import Vote from "./pages/Vote";
 import NoPage from "./pages/NoPage";
 import "./index.css";
+import Footer from "./components/Footer.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
   },
   {
     path: "upload",

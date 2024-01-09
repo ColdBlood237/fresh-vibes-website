@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 
 function Vote() {
@@ -5,6 +6,7 @@ function Vote() {
     <>
       <NavBar />
       <h1>Vote</h1>
+      <Footer />
     </>
   );
 }
