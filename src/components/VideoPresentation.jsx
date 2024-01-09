@@ -1,22 +1,21 @@
-import video from "../assets/dummyvid.mp4";
-import finale from "../assets/serataFinale.mp4";
+import concert from "../assets/concert.gif";
 
 export default function VideoPresentation() {
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row">
-        <video
+        <img
+          src={concert}
+          alt="concert"
           className="max-w-md md:max-w-2xl rounded-lg shadow-2xl"
-          src={video}
-          controls="controls autoplay"
-          type="video/webm"
-        ></video>
+        />
         <div>
-          <h1 className="text-5xl font-bold">Box Office News!</h1>
+          <h1 className="text-5xl font-bold">Live Contest!</h1>
           <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            Ecco cosa c'è in serbo per te, amante della musica e del
+            divertimento! Oltre al grande premio, la top 10 più votata riceverà
+            in regalo il biglietto per il favoloso evento Fresh Vibes Live
+            Contest!
           </p>
         </div>
       </div>

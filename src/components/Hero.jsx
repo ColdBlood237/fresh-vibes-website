@@ -24,7 +24,7 @@ export default function Hero() {
             talenti che si esibiranno ed immergiti nell'entusiasmo Fresh Vibes
             ora!!!
           </p>
-          <button className="btn btn-primary mr-1 w-20">Upload</button>
+          <button className="btn btn-primary mr-2 w-20">Upload</button>
           <button className="btn btn-primary w-20">Vote</button>
         </div>
       </div>

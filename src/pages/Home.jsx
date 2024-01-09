@@ -1,39 +1,35 @@
 import { nanoid } from "nanoid";
-import Upload from "./Upload";
-import Vote from "./Vote";
-import NoPage from "./NoPage";
 import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import Sponsors from "../components/Sponsors";
 import VideoPresentation from "../components/VideoPresentation";
 import Card from "../components/Card";
 import Tuto from "../components/Tuto";
-import disc from "../assets/disc.jpg";
-import concert from "../assets/concert.jpg";
+import Footer from "../components/Footer";
 import travel from "../assets/travel2.jpg";
 import studio from "../assets/studio.jpg";
-import Candidates from "../components/Candidates";
 import cubo from "../assets/cubo.jpg";
 import mike from "../assets/mike.jpg";
 import melodia from "../assets/melodia.jpg";
 import morgano from "../assets/morgano.jpg";
-import Footer from "../components/Footer";
+import money from "../assets/money.jpg";
+import GuestStars from "../components/GuestStars";
 
 function Home() {
   const premi = [
     {
-      title: "",
-      text: "Sessioni in studio con un label partner !",
+      title: "🎙️ ETICHETTA MUSICALE",
+      text: "Il vincitore di questo straordinario evento avrà l'opportunità unica di ottenere un contratto discografico esclusivo con la rinomata etichetta discografica Pony Records!",
       img: studio,
     },
     {
-      title: "",
-      text: "Concerti dove sarai tu la star !! ",
-      img: concert,
+      title: "💰 CASH",
+      text: "Parliamo di ben 100.000 euro all'artista vincitore!!! Simbolo di riconoscimento dell'industria musicale, che ti propulseranno verso nuovi orizzonti nel panorama globale.",
+      img: money,
     },
     {
-      title: "",
-      text: "Tour per portare il tuo talento oltre ai mari !!!",
+      title: "🛫 TOUR",
+      text: "La possibilità di fare un tour indimenticabile in Europa, portando la propria musica a nuovi livelli!",
       img: travel,
     },
   ];
@@ -69,7 +65,7 @@ function Home() {
         <Sponsors />
         <VideoPresentation />
         <h2 className="text-center text-5xl font-bold mt-4">PREMI</h2>
-        <div className="flex flex-col items-center md:flex-row md:justify-evenly md:justify md:px-4 gap-8 my-8">
+        <div className="flex flex-col items-center md:flex-row md:justify-evenly md:justify md:px-4 md:items-start gap-8 my-8">
           {premi.map((premio) => (
             <Card
               key={nanoid()}
@@ -80,7 +76,7 @@ function Home() {
           ))}
         </div>
         <Tuto />
-        <Candidates />
+        <GuestStars />
         <div className="bg-base-200 mt-8 pt-8">
           <h2 className="text-center text-5xl font-bold">COMMISSIONE</h2>
           <div className="flex flex-col items-center md:grid md:grid-cols-2 md:mx-auto md:justify-items-center md:items-start lg:flex lg:flex-row lg:justify-evenly lg:justify lg:px-4 gap-8 py-8">
