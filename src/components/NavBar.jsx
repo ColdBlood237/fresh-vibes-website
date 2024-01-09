@@ -62,8 +62,8 @@ export default function NavBar() {
         </ul>
       </div>
       <div className="navbar-end gap-1">
-        <a className="btn">Log In</a>
-        <a className="btn">Sign In</a>
+        <a className="btn w-20">Log In</a>
+        <a className="btn w-20">Sign In</a>
       </div>
     </div>
   );
