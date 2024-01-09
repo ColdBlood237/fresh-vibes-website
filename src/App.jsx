@@ -12,6 +12,7 @@ import disc from "./assets/disc.jpg";
 import concert from "./assets/concert.jpg";
 import travel from "./assets/travel2.jpg";
 import studio from "./assets/studio.jpg";
+import Candidates from "./components/Candidates";
 
 function App() {
   const premi = [
@@ -32,6 +33,29 @@ function App() {
     },
   ];
 
+  // const judges = {
+  //   {
+  //     title: "",
+  //     text: "",
+  //     img: ""
+  //   },
+  //   {
+  //     title: "",
+  //     text: "",
+  //     img: ""
+  //   },
+  //   {
+  //     title: "",
+  //     text: "",
+  //     img: ""
+  //   },
+  //   {
+  //     title: "",
+  //     text: "",
+  //     img: ""
+  //   },
+  // }
+
   return (
     <>
       <NavBar />
@@ -51,6 +75,20 @@ function App() {
           ))}
         </div>
         <Tuto />
+        <Candidates />
+        <div className="bg-base-200">
+          <h2 className="text-center text-5xl font-bold mt-4">COMMISSIONE</h2>
+          {/* <div className="flex flex-col items-center md:flex-row md:justify-evenly md:justify md:px-4 gap-8 my-8">
+            {judges.map((judge) => (
+              <Card
+                key={nanoid()}
+                img={judge.img}
+                title={judge.title}
+                text={judge.text}
+              />
+            ))}
+          </div> */}
+        </div>
       </div>
     </>
   );
