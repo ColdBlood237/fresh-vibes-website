@@ -4,26 +4,30 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Upload from "./pages/Upload";
 import Vote from "./pages/Vote";
-import NoPage from "./pages/NoPage";
+import Error from "./pages/Error.jsx";
 import "./index.css";
-import Footer from "./components/Footer.jsx";
+import NavBar from "./components/NavBar.jsx";
+import Root from "./pages/Root.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
-  },
-  {
-    path: "upload",
-    element: <Upload />,
-  },
-  {
-    path: "vote",
-    element: <Vote />,
-  },
-  {
-    path: "*",
-    element: <NoPage />,
+    element: <Root />,
+    errorElement: <Error />,
+    children: [
+      {
+        path: "/home",
+        element: <Home />,
+      },
+      {
+        path: "/upload",
+        element: <Upload />,
+      },
+      {
+        path: "/vote",
+        element: <Vote />,
+      },
+    ],
   },
 ]);
 

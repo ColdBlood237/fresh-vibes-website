@@ -3,11 +3,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { nanoid } from "nanoid";
 
-import guest from "../assets/candidate.jpg";
-import guest2 from "../assets/candidate2.jpg";
 import guest3 from "../assets/candidate3.jpg";
 import guest4 from "../assets/candidate4.jpg";
-import guest5 from "../assets/candidate5.jpg";
 import guest6 from "../assets/candidate6.jpg";
 import guest7 from "../assets/candidate7.jpg";
 
@@ -53,7 +50,7 @@ export default function GuestStars() {
         breakpoint: 840,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           initialSlide: 2,
         },
       },

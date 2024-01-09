@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import App from "../pages/Home";
 import logo from "../assets/logo.png";
 
 export default function NavBar() {
   return (
-    <div className="navbar bg-base-100">
+    <div id="navbar" className="navbar bg-base-100">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,16 +27,16 @@ export default function NavBar() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <Link to="/">Home</Link>
+              <Link to="home">Home</Link>
             </li>
             <li>
-              <Link to="/upload">Upload</Link>
+              <Link to="upload">Upload</Link>
             </li>
             <li>
-              <Link to="/vote">Vote</Link>
+              <Link to="vote">Vote</Link>
             </li>
             <li>
-              <Link to="/#contacts">Contacts</Link>
+              <a href="#socials">Socials</a>
             </li>
           </ul>
         </div>
@@ -48,7 +47,7 @@ export default function NavBar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="home">Home</Link>
           </li>
           <li>
             <Link to="upload">Upload</Link>
@@ -57,7 +56,7 @@ export default function NavBar() {
             <Link to="vote">Vote</Link>
           </li>
           <li>
-            <Link to="#contacts">Contacts</Link>
+            <a href="#socials">Socials</a>
           </li>
         </ul>
       </div>

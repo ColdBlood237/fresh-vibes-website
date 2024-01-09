@@ -59,7 +59,6 @@ function Home() {
 
   return (
     <>
-      <NavBar />
       <div>
         <Hero />
         <Sponsors />
@@ -91,7 +90,6 @@ function Home() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }
