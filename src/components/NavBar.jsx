@@ -27,7 +27,7 @@ export default function NavBar() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <Link to="home">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="upload">Upload</Link>
@@ -40,14 +40,14 @@ export default function NavBar() {
             </li>
           </ul>
         </div>
-        <Link to="/home">
+        <Link to="/">
           <img src={logo} className="w-16 h-12 object-cover" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link to="home">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="upload">Upload</Link>
