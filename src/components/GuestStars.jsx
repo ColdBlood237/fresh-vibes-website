@@ -67,7 +67,7 @@ export default function GuestStars() {
   return (
     <div>
       <h1 className="text-5xl font-bold text-center my-8">GUEST STARS</h1>
-      <div className="w-11/12 mx-auto">
+      <div className="w-10/12 mx-auto">
         <Slider {...settings}>{guestsDivs}</Slider>
       </div>
     </div>

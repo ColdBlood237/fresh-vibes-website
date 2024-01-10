@@ -8,6 +8,7 @@ import Error from "./pages/Error.jsx";
 import "./index.css";
 import NavBar from "./components/NavBar.jsx";
 import Root from "./pages/Root.jsx";
+import UploadSuccess from "./pages/UploadSuccess.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/upload",
         element: <Upload />,
+      },
+      {
+        path: "/upload/success",
+        element: <UploadSuccess />,
       },
       {
         path: "/vote",

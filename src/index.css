@@ -6,3 +6,12 @@
 [data-theme="cupcake"] .slick-next::before {
   color: blueviolet;
 }
+
+.slick-list img {
+  border-radius: 14px;
+}
+
+.slick-track {
+  display: flex;
+  gap: 8px;
+}
