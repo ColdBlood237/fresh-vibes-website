@@ -1,11 +1,9 @@
 import { nanoid } from "nanoid";
-import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import Sponsors from "../components/Sponsors";
 import VideoPresentation from "../components/VideoPresentation";
 import Card from "../components/Card";
 import Tuto from "../components/Tuto";
-import Footer from "../components/Footer";
 import travel from "../assets/travel2.jpg";
 import studio from "../assets/studio.jpg";
 import cubo from "../assets/cubo.jpg";
@@ -15,7 +13,7 @@ import morgano from "../assets/morgano.jpg";
 import money from "../assets/money.jpg";
 import GuestStars from "../components/GuestStars";
 
-function Home() {
+export default function Home() {
   const premi = [
     {
       title: "🎙️ ETICHETTA MUSICALE",
@@ -93,5 +91,3 @@ function Home() {
     </>
   );
 }
-
-export default Home;
