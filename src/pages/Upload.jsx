@@ -27,7 +27,7 @@ function Upload() {
 
     const videoId = getId(videoLink);
     if (videoId !== null) {
-      navigate("/upload/success");
+      setIframeSrc(true);
       setVideoNotFound(false);
     } else {
       setShowFrame(false);

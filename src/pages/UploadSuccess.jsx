@@ -15,7 +15,7 @@ export default function UploadSuccess() {
             disponibile sul sito e i nostri socials, nel frattempo stay fresh
             🥶!
           </p>
-          <Link to="/home">
+          <Link to="/">
             <button className="btn btn-primary">Home</button>
           </Link>
         </div>
