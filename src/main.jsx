@@ -6,9 +6,10 @@ import Upload from "./pages/Upload";
 import Vote from "./pages/Vote";
 import Error from "./pages/Error.jsx";
 import "./index.css";
-import NavBar from "./components/NavBar.jsx";
 import Root from "./pages/Root.jsx";
 import UploadSuccess from "./pages/UploadSuccess.jsx";
+import Login from "./pages/Login.jsx";
+import Signin from "./pages/Signin.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: "/vote",
         element: <Vote />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/signin",
+        element: <Signin />,
       },
     ],
   },

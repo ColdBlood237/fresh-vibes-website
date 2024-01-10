@@ -61,8 +61,12 @@ export default function NavBar() {
         </ul>
       </div>
       <div className="navbar-end gap-1">
-        <a className="btn w-20">Log In</a>
-        <a className="btn w-20">Sign In</a>
+        <Link to="login" className="btn w-20">
+          Log In
+        </Link>
+        <Link to="signin" className="btn w-20">
+          Sign In
+        </Link>
       </div>
       <label className="swap swap-rotate ml-8">
         {/* this hidden checkbox controls the state */}
