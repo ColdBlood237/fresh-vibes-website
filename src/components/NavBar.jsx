@@ -40,7 +40,7 @@ export default function NavBar() {
             </li>
           </ul>
         </div>
-        <Link to="/">
+        <Link to="/home">
           <img src={logo} className="w-16 h-12 object-cover" />
         </Link>
       </div>

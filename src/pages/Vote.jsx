@@ -53,12 +53,30 @@ function Vote() {
             Puoi votare fino a 5 artisti, ma una volta premuto il tasto invio
             non si torna più indietro.
           </p>
+          <div role="alert" className="alert alert-info">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              className="stroke-current shrink-0 w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <span>Le votazioni non sono ancora aperte.</span>
+          </div>
         </div>
         {/* <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100"> */}
         <form onSubmit={handleSubmit} id="vote-form" className="card-body">
           <div className="grid grid-cols-2 gap-2">{artistsCheckboxes}</div>
           <div className="form-control mt-6">
-            <button className="btn btn-primary w-28">Invia</button>
+            <button disabled className="btn btn-primary w-28">
+              Invia
+            </button>
           </div>
         </form>
         {/* </div> */}
